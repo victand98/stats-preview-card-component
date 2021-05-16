@@ -1,3 +1,12 @@
 body {
-  //   background-color: $very-dark-blue;
+  background-color: $very-dark-blue;
+  color: $white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 5em 2em;
 }

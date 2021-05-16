@@ -1,0 +1,58 @@
+.card {
+  background-color: $dark-desaturated-blue;
+  display: flex;
+  flex-flow: column-reverse;
+  border-radius: 0.6em;
+  overflow: hidden;
+
+  &-image {
+    background-image: linear-gradient(
+        rgba($soft-violet, 0.5),
+        rgba($soft-violet, 0.5)
+      ),
+      url("/assets/images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  &-body {
+    padding: 1em 2em 3em 2em;
+    text-align: center;
+
+    .card-heading {
+      font-size: 1.7rem;
+
+      .text-accent {
+        color: $soft-violet;
+      }
+    }
+
+    .card-hero {
+      color: $slightly-transparent-white;
+      line-height: 1.5rem;
+      margin-bottom: 3em;
+    }
+
+    .card-stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 2em;
+
+      .stat {
+        &-number {
+          display: block;
+          font-size: 1.8em;
+          font-weight: 700;
+          margin-bottom: 0.2em;
+        }
+
+        &-heading {
+          text-transform: uppercase;
+          color: $slightly-transparent-gray;
+          letter-spacing: 0.04em;
+        }
+      }
+    }
+  }
+}

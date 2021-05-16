@@ -4,5 +4,62 @@
 /*
     LAYOUT
 */
+body {
+  background-color: #090b1a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 5em 2em;
+}
+
+.card {
+  background-color: #1b1938;
+  display: flex;
+  flex-flow: column-reverse;
+  border-radius: 0.6em;
+  overflow: hidden;
+}
+.card-image {
+  background-image: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url("/assets/images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+.card-body {
+  padding: 1em 2em 3em 2em;
+  text-align: center;
+}
+.card-body .card-heading {
+  font-size: 1.7rem;
+}
+.card-body .card-heading .text-accent {
+  color: #aa5cdb;
+}
+.card-body .card-hero {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+  margin-bottom: 3em;
+}
+.card-body .card-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2em;
+}
+.card-body .card-stats .stat-number {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.card-body .card-stats .stat-heading {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.04em;
+}
 
 /*# sourceMappingURL=style.css.map */
