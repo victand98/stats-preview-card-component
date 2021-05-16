@@ -55,4 +55,37 @@
       }
     }
   }
+
+  @include xl {
+    flex-flow: row;
+
+    &-image {
+      background-image: linear-gradient(
+          rgba($soft-violet, 0.5),
+          rgba($soft-violet, 0.5)
+        ),
+        url("/assets/images/image-header-desktop.jpg");
+      width: 100%;
+      height: auto;
+    }
+
+    &-body {
+      padding: 2.5em 4.3em;
+      text-align: left;
+
+      .card-heading {
+        font-size: 2.1rem;
+        padding-right: 1.8em;
+      }
+
+      .card-hero {
+        padding-right: 9em;
+        margin-bottom: 5em;
+      }
+
+      .card-stats {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
 }
